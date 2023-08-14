@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>JS Home Work Task (additionally)</title>
+
+    <link href="../../assets/_css/style_general.css" rel="stylesheet">
+</head>
+
+
+<body class="workspace">
+<div class="wrapper">
+
+	<a class="Back_button" href="lesson_2/index.html">← Back</a>      
+
+    <h2>Task (additionally) 7</h2>
+    <div class="task__content flex-H-start-start">
+        <p>Скласти алгоритм, який обчислює цілу і дробову частину даного числа х. Наприклад: число 23,56  => ціла: 23, дробова: 0,56.</p>
+    </div>
+    <hr>
+
+
+    <script>
+        // enter the data
+            let x = prompt("X");
+
+        // finding the result
+            let integerPartX = parseInt(x);
+            let fractionalPartX = parseFloat(x) - integerPartX;
+            
+        // output the result
+            document.write(`
+                Integer Part X = ${integerPartX}<br>
+                Fractional Part X = ${fractionalPartX}  
+            `);
+    </script>
+    
+
+</div> <!-- wrapper -->
+
+</body>
+</html>
+

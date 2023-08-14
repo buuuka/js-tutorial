@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>JS Home Work Task (additionally)</title>
+
+    <link href="../../assets/_css/style_general.css" rel="stylesheet">
+</head>
+
+
+<body class="workspace">
+<div class="wrapper">
+
+	<a class="Back_button" href="lesson_2/index.html">← Back</a>      
+
+    <h2>Task (additionally) 15</h2>
+    <div class="task__content flex-H-start-start">
+        <p>З клавіатури вводиться кількість місяців, які пройшли від деякого моменту часу. Вивести повну кількість років і місяців. Наприклад, дано 28 місяців, а вивести 2 роки і 4 місяці.</p>
+    </div>
+    <hr>
+
+
+    <script>
+        // enter the data
+            let monthNumber = parseInt(prompt("кількість місяців"));
+
+            const MONTH_IN_YEAR = 12; 
+
+        // finding the result
+            let yearCurrent = Math.floor(monthNumber/MONTH_IN_YEAR);
+            let monthCurrent = monthNumber - yearCurrent*MONTH_IN_YEAR ; 
+
+
+        // output the result
+            document.write(`
+                ${monthNumber} місяців =  ${yearCurrent} роки і ${monthCurrent} місяці
+            `);
+
+
+    </script>
+    
+
+</div> <!-- wrapper -->
+
+</body>
+</html>
+

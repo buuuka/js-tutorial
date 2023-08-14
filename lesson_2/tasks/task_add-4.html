@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>JS Home Work Task (additionally)</title>
+
+    <link href="../../assets/_css/style_general.css" rel="stylesheet">
+</head>
+
+
+<body class="workspace">
+<div class="wrapper">
+
+	<a class="Back_button" href="lesson_2/index.html">← Back</a>      
+
+    <h2>Task (additionally) 4</h2>
+    <div class="task__content flex-H-start-start">
+        <p>З клавіатури вводиться вік дитини. Вивести на екран через скільки років вона буде відвідувати садочок, піде у школу, закінчить школу, вступить і закінчить</p>
+    </div>
+    <hr>
+
+
+    <script>
+        // enter the data
+            let childAge = parseInt(prompt("Bік дитини"));
+            const NURSERY_SCHOOL_START = 3;
+            const SECONDARY_SCHOOL_START = 6;
+            const SECONDARY_SCHOOL_FINISH = 17;
+            const HIGHE_SCHOOL_TIME = 5;
+
+        // finding the result
+            let startNS = ( NURSERY_SCHOOL_START-childAge <0 ) ? 0 : (NURSERY_SCHOOL_START-childAge);
+            let startSS = ( SECONDARY_SCHOOL_START-childAge <0 ) ? 0 : (SECONDARY_SCHOOL_START-childAge);
+            let finishSS = SECONDARY_SCHOOL_FINISH - childAge;
+            let finishHS = finishSS + HIGHE_SCHOOL_TIME;
+            
+        // output the result
+            document.write(`
+                Піде в садочок через <strong>${startNS}</strong> років<br>
+                Піде в школу через <strong>${startSS}</strong> років<br>       
+                Закінчить школу та вступить до вишу через <strong>${finishSS}</strong> років<br>       
+                Закінчить виш через <strong>${finishHS}</strong> років   
+            `);
+    </script>
+    
+    
+
+</div> <!-- wrapper -->
+
+</body>
+</html>
+

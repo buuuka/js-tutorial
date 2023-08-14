@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>JS Home Work Task (additionally)</title>
+
+    <link href="../../assets/_css/style_general.css" rel="stylesheet">
+</head>
+
+
+<body class="workspace">
+<div class="wrapper">
+
+	<a class="Back_button" href="lesson_2/index.html">← Back</a>      
+
+    <h2>Task (additionally) 6</h2>
+    <div class="task__content flex-H-start-start">
+        <p>Дано три дійсні змінні a, b і c.  Скласти  алгоритм, який міняє місцями значення цих змінних наступним чином: змінна a набуває значення змінної b, змінна b набуває значення змінної c, а змінна  c – попереднє значення змінної a</p>
+    </div>
+    <hr>
+
+
+    <script>
+        // enter the data
+            let a = parseFloat(prompt("A"));
+            let b = parseFloat(prompt("B"));
+            let c = parseFloat(prompt("C"));
+
+        // finding the result
+            let remA = a;
+            a = b;
+            b = c;
+            c = remA;
+            
+        // output the result
+            document.write(`
+                a = ${a} <br>
+                b = ${b} <br>
+                c = ${c}  
+            `);
+    </script>
+    
+    
+
+</div> <!-- wrapper -->
+
+</body>
+</html>
+

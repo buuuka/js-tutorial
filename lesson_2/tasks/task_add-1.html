@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>JS Home Work Task (additionally)</title>
+
+    <link href="../../assets/_css/style_general.css" rel="stylesheet">
+</head>
+
+
+<body class="workspace">
+<div class="wrapper">
+
+	<a class="Back_button" href="lesson_2/index.html">← Back</a>      
+
+    <h2>Task (additionally) 1</h2>
+    <div class="task__content flex-H-start-start">
+        <p>Дано ширину екрана та кількість елементів, які повинні бути відображені у рядку. Визначити ширину елементів, які повинні бути відображені у цьому рядку.</p>
+    </div>
+    <hr>
+
+
+    <script>
+        // enter the data
+            let screenWidth = parseInt(prompt("Ширина екрана", "0"));
+            let boxAmount = parseInt(prompt("Kількість елементів", "0"));
+    
+        // finding the result
+            let boxnWidth = Math.floor(screenWidth/boxAmount);
+    
+        // output the result
+            document.write(`
+                Ширина елементу  ${boxnWidth}
+            `);
+    </script>
+    
+
+</div> <!-- wrapper -->
+
+</body>
+</html>
+

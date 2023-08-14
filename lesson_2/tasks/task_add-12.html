@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>JS Home Work Task (additionally)</title>
+
+    <link href="../../assets/_css/style_general.css" rel="stylesheet">
+</head>
+
+
+<body class="workspace">
+<div class="wrapper">
+
+	<a class="Back_button" href="lesson_2/index.html">← Back</a>      
+
+    <h2>Task (additionally) 12</h2>
+    <div class="task__content flex-H-start-start">
+        <p>З клавіатури вводиться кількість монет номіналом 2 копійки (5коп, 25коп, 50 коп). Визначити скільки гривень і копійок є у даній сумі.</p>
+    </div>
+    <hr>
+
+
+    <script>
+        // enter the data
+            let copNominal2 = parseInt(prompt("кількість монет номіналом 2 копійки"));
+            let copNominal5 = parseInt(prompt("кількість монет номіналом 5 копійок"));
+            let copNominal25 = parseInt(prompt("кількість монет номіналом 25 копійок"));
+            let copNominal50 = parseInt(prompt("кількість монет номіналом 50 копійок"));
+
+        // finding the result
+            let sumNominal2_UAH = Math.floor(copNominal2/50); 
+            let sumNominal2_Cop = copNominal2*2 - sumNominal2_UAH*100; 
+
+            let sumNominal5_UAH = Math.floor(copNominal5/20); 
+            let sumNominal5_Cop = copNominal5*5 - sumNominal5_UAH*100; 
+
+            let sumNominal25_UAH = Math.floor(copNominal25/4); 
+            let sumNominal25_Cop = copNominal25*25 - sumNominal25_UAH*100; 
+
+            let sumNominal50_UAH = Math.floor(copNominal50/2); 
+            let sumNominal50_Cop = copNominal50*50 - sumNominal50_UAH*100; 
+
+
+        // output the result
+            document.write(`
+                ${copNominal2} монет номіналом 2 копійки =  ${sumNominal2_UAH} гривень ${sumNominal2_Cop} копійок<br> 
+                ${copNominal5} монет номіналом 5 копійки =  ${sumNominal5_UAH} гривень ${sumNominal5_Cop} копійок<br> 
+                ${copNominal25} монет номіналом 25 копійки =  ${sumNominal25_UAH} гривень ${sumNominal25_Cop} копійок<br> 
+                ${copNominal50} монет номіналом 50 копійки =  ${sumNominal50_UAH} гривень ${sumNominal50_Cop} копійок 
+            `);
+
+
+    </script>
+    
+
+</div> <!-- wrapper -->
+
+</body>
+</html>
+

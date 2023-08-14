@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>JS Home Work Task </title>
+
+    <link href="../../assets/_css/style_general.css" rel="stylesheet">
+</head>
+
+
+<body class="workspace">
+<div class="wrapper">
+
+	<a class="Back_button" href="lesson_2/index.html">← Back</a>      
+
+    <h2>Task 2</h2>
+    <div class="task__content flex-H-start-start">
+        <p>Знайти суму, добуток та частку двох дійсних чисел. Результат вивести у формі таблиці</p>
+    </div>
+    <hr>
+
+    <script>
+        // enter the data
+            let firstNumber = parseFloat(prompt("First Number", "0.0"));
+            let secondNumber = parseFloat(prompt("Second Number", "0.0"));
+    
+        // finding the result
+            let sum = firstNumber + secondNumber;
+            let mult = firstNumber * secondNumber;
+            let divis1 = firstNumber/secondNumber;
+            let divis2 = secondNumber/firstNumber ;
+    
+        // output the result
+            document.write(`
+                <table>
+                    <thead>
+                        <th>Operation</th>
+                        <th>Result</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>${firstNumber} + ${secondNumber}</td>
+                            <td>${sum}</td>
+                        </tr>
+                        <tr>
+                            <td>${firstNumber} * ${secondNumber}</td>
+                            <td>${mult}</td>
+                        </tr>
+                        <tr>
+                            <td>${firstNumber} / ${secondNumber}</td>
+                            <td>${divis1}</td>
+                        </tr>
+                        <tr>
+                            <td>${secondNumber} / ${firstNumber}</td>
+                            <td>${divis2}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            `);
+    </script>
+    
+
+</div> <!-- wrapper -->
+
+</body>
+</html>
+
